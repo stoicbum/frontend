@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="container">
+        <p id="description">
+            Let us know how we can improve American Pizza Company
+        </p>
+        <form id="survey-form" method="GET" action="#">
+            <div class="row">
+                <div class="label">
+                    <label id="name-label" for="name">
+                        * Name:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label id="email-label" for="email">
+                        * Email:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" class="input-field" required placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label id="age-tab" for="age">
+                        *Age:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="how-often">
+                        How often do you dine with us a week?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <select id="how-often" name="howoften" class="dropdown">
+                        <option disabled selected value>
+                            Select an option
+                        </option>
+                        <option value="firstTime">
+                            First Time
+                        </option>
+                        <option value="0-1">
+                            0-1
+                        </option>
+                        <option value="2-3">
+                            2-3
+                        </option>
+                        <option value="5">
+                            5 or more
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="quick">
+                        How Quick or Adequate Was the Speed of Service?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none">
+                        <li class="radio">
+                            <label>
+                                Quick
+                                <input type="radio" name="radio-buttons1" value="1" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Adequate
+                                <input type="radio" name="radio-buttons1" value="2" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Slow
+                                <input type="radio" name="radio-buttons1" value="3" class="userRatings">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for= "friendly">
+                        How Friendly was the staff?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <select id="friendly" name="how-friendly" class="dropdown">
+                        <option disabled selected value>
+                            Select an option
+                        </option>
+                        <option value="very-friendly">
+                            Very Friendly
+                        </option>
+                        <option value="friendly">
+                            Friendly
+                        </option>
+                        <option value="attitude">
+                            Needs Improvement
+                        </option>
+                        <option class="very-rude">
+                            Very Rude
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="recommend">
+                        Would you recommend American Pizza Company to family or friends?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none">
+                        <li class="radio">
+                            <label>
+                                Definitely
+                                <input type="radio" name="radio-buttons" value="1" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Maybe
+                                <input type="radio" name="radio-buttons" value="2" class="userRatings">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Not Sure
+                                <input type="radio" name="radio-buttons" value="3" class="userRatings">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="like">
+                        What did you like best about our Food and Services?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="like">
+                        What Did You Not Like About Our Food and Services?
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
